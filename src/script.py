@@ -8,9 +8,10 @@ LEARNING_RATE = 0.02
 EPOCHS = 1000
 DIM = 15
 BATCH_SIZE = 128
+FILE_NAME = 'data/silimarillion_test.txt'
 
 if __name__ == '__main__':
-    file_data = get_file_data('data/silimarillion_test.txt')
+    file_data = get_file_data(FILE_NAME)
     text = [file_data]  # maintain original generate_dict_data usage
     vocabulary = generate_dict_data(text)
     word_to_index = vocabulary['word_to_index']
